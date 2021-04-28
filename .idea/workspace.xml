@@ -10,10 +10,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Tuesday change">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Photos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webContexts.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Photos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/Photographs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Photographs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index-cookies.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index-cookies.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/Photographs.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/Photographs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index-cookies.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index-cookies.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,6 +55,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
@@ -81,15 +86,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -104,7 +107,7 @@
       <method v="2" />
     </configuration>
     <configuration name="TomEE 8.5.57" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.57" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
-      <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <deployment>
         <artifact name="Taller-4:war exploded">
           <settings>
@@ -304,6 +307,9 @@
       <workItem from="1619536166993" duration="82000" />
       <workItem from="1619574271971" duration="5246000" />
       <workItem from="1619580250677" duration="2638000" />
+      <workItem from="1619621361282" duration="4105000" />
+      <workItem from="1619625525570" duration="41000" />
+      <workItem from="1619625622359" duration="1357000" />
     </task>
     <task id="LOCAL-00001" summary="Tuesday change">
       <created>1619529786498</created>
