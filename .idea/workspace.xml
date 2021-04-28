@@ -10,7 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Tuesday change">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Photos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Photographs.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/Photographs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index-cookies.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index-cookies.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,9 +25,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -54,6 +58,8 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Project" />
@@ -61,7 +67,42 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index-cookies.html">
+    <configuration name="Photos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.Taller_4.Photos" />
+      <module name="Taller-4" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.Taller_4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Photographs.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Taller-4/src/main/webapp/Photographs.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Photographs.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller_4_war_exploded/Photographs.html">
+      <method v="2" />
+    </configuration>
+    <configuration name="index-cookies.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Taller-4/src/main/webapp/index-cookies.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="TomEE 8.5.57" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.57" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
       <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <deployment>
@@ -227,6 +268,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.Photos" />
+      <item itemvalue="JavaScript Debug.Photographs.html" />
+      <item itemvalue="JavaScript Debug.Photographs.html (1)" />
+      <item itemvalue="JavaScript Debug.index-cookies.html" />
+      <item itemvalue="TomEE Server.TomEE 8.5.57" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index-cookies.html" />
+        <item itemvalue="JavaScript Debug.Photographs.html (1)" />
+        <item itemvalue="JavaScript Debug.Photographs.html" />
+        <item itemvalue="Application.Photos" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -246,6 +302,8 @@
       <workItem from="1619296206578" duration="25000" />
       <workItem from="1619524642392" duration="5116000" />
       <workItem from="1619536166993" duration="82000" />
+      <workItem from="1619574271971" duration="5246000" />
+      <workItem from="1619580250677" duration="2638000" />
     </task>
     <task id="LOCAL-00001" summary="Tuesday change">
       <created>1619529786498</created>
