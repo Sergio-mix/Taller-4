@@ -10,10 +10,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Tuesday change">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/unbosque/model/Dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/edu/unbosque/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/css/style_photographs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/photographs.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/table.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Cookies.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Photos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taller-4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Taller-4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/unbosque/controller/Cookies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/HelloServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/unbosque/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/Taller_4/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/edu/unbosque/controller/Photos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/Photographs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index-cookies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/Photographs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index-cookies.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +47,7 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Jsp File" />
         <option value="Class" />
       </list>
     </option>
@@ -62,120 +84,25 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
-  <component name="RunManager" selected="TomEE Server.TomEE 8.5.57">
-    <configuration name="Photos" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.Taller_4.Photos" />
-      <module name="Taller-4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.Taller_4.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.57">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Photographs.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Taller-4/src/main/webapp/Photographs.html" useBuiltInWebServerPort="true">
+    <configuration name="table.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller_4_war_exploded/table.jsp">
       <method v="2" />
-    </configuration>
-    <configuration name="Photographs.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller_4_war_exploded/Photographs.html">
-      <method v="2" />
-    </configuration>
-    <configuration name="index-cookies.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Taller-4/src/main/webapp/index-cookies.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
-    <configuration name="TomEE 8.5.57" type="TomeeConfiguration" factoryName="Local" APPLICATION_SERVER_NAME="TomEE 8.5.57" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
-      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
-      <deployment>
-        <artifact name="Taller-4:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/Taller_4_war_exploded" />
-          </settings>
-        </artifact>
-      </deployment>
-      <server-settings>
-        <option name="BASE_DIRECTORY_NAME" value="c6345074-7cbb-4358-b778-f438aa829f0a" />
-      </server-settings>
-      <predefined_log_file enabled="true" id="Tomcat" />
-      <predefined_log_file enabled="true" id="Tomcat Catalina" />
-      <predefined_log_file id="Tomcat Manager" />
-      <predefined_log_file id="Tomcat Host Manager" />
-      <predefined_log_file id="Tomcat Localhost Access" />
-      <RunnerSettings RunnerId="Debug">
-        <option name="DEBUG_PORT" value="64024" />
-      </RunnerSettings>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
-        <option name="USE_ENV_VARIABLES" value="true" />
-        <STARTUP>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </STARTUP>
-        <SHUTDOWN>
-          <option name="USE_DEFAULT" value="true" />
-          <option name="SCRIPT" value="" />
-          <option name="VM_PARAMETERS" value="" />
-          <option name="PROGRAM_PARAMETERS" value="" />
-        </SHUTDOWN>
-      </ConfigurationWrapper>
-      <method v="2">
-        <option name="Make" enabled="true" />
-        <option name="BuildArtifacts" enabled="true">
-          <artifact name="Taller-4:war exploded" />
-        </option>
-      </method>
     </configuration>
     <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -255,19 +182,108 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="Application.Photos" />
-      <item itemvalue="JavaScript Debug.Photographs.html" />
-      <item itemvalue="JavaScript Debug.Photographs.html (1)" />
-      <item itemvalue="JavaScript Debug.index-cookies.html" />
-      <item itemvalue="TomEE Server.TomEE 8.5.57" />
-    </list>
+    <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Taller_4_war_exploded/" />
+      <deployment>
+        <artifact name="Taller-4:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/Taller_4_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="2dce1f36-7d46-465e-815e-40dc3f8ee101" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="49421" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Taller-4:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings />
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JavaScript Debug.index-cookies.html" />
-        <item itemvalue="JavaScript Debug.Photographs.html (1)" />
-        <item itemvalue="JavaScript Debug.Photographs.html" />
-        <item itemvalue="Application.Photos" />
+        <item itemvalue="JavaScript Debug.table.jsp" />
       </list>
     </recent_temporary>
   </component>
@@ -295,6 +311,12 @@
       <workItem from="1619625525570" duration="41000" />
       <workItem from="1619625622359" duration="1357000" />
       <workItem from="1619832707010" duration="5957000" />
+      <workItem from="1619880757220" duration="543000" />
+      <workItem from="1619882268680" duration="2158000" />
+      <workItem from="1619889455515" duration="2230000" />
+      <workItem from="1619891819457" duration="382000" />
+      <workItem from="1619892264308" duration="40000" />
+      <workItem from="1619892353833" duration="5912000" />
     </task>
     <task id="LOCAL-00001" summary="Tuesday change">
       <created>1619529786498</created>
@@ -324,5 +346,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tuesday change" />
     <option name="LAST_COMMIT_MESSAGE" value="Tuesday change" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Taller_4$TomEE_8_5_57.ic" NAME="TomEE 8.5.57 Coverage Results" MODIFIED="1619880907848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
