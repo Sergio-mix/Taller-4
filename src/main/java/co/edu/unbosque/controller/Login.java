@@ -1,4 +1,4 @@
-package com.edu.unbosque.controller;
+package co.edu.unbosque.controller;
 
 import java.io.*;
 import javax.servlet.http.*;

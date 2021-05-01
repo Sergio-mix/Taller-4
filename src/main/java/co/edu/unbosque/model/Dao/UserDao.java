@@ -1,6 +1,6 @@
-package com.edu.unbosque.model.Dao;
+package co.edu.unbosque.model.Dao;
 
-import com.edu.unbosque.model.User;
+import co.edu.unbosque.model.User;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.text.DateFormat;

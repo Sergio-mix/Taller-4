@@ -1,4 +1,4 @@
-package com.edu.unbosque.model;
+package co.edu.unbosque.model;
 
 /**
  * Class User

@@ -1,4 +1,4 @@
-package com.edu.unbosque.controller;
+package co.edu.unbosque.controller;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
