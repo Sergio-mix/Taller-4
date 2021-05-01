@@ -1,6 +1,7 @@
 package com.example.Taller_4;
 
 import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,17 +13,38 @@ import java.util.List;
 @WebServlet(name = "Guardar", value = "/photo_saved")
 public class Photos extends HttpServlet {
 
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        response.setContentType("text/html");
-        String namePhoto1 = "photos";
-        String namePhoto2 = alphanumeric(namePhoto1);
-        String descripcion = "descripcion";
-        PrintWriter out = response.getWriter();
-        out.println(namePhoto2);
-        out.println(descripcion);
-
-
-    }
+//    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+//        response.setContentType("text/html");
+//        PrintWriter out = response.getWriter();
+//
+//        Cookie[] theCookie =request.getCookies();
+//
+//        try {
+//            Cookie xUrl = new Cookie("url", url);
+//            Cookie xDescription = new Cookie("description", url);
+//
+//            //Adding the cookies to response header
+//            response.addCookie(xUrl);
+//            response.addCookie(xDescription);
+//            out.println("<a href = 'Photographs.html'>Uploading photos</a>");
+//
+//        } catch (Exception e) {
+//            System.out.println(e);
+//        }
+//
+//        String namePhoto2 = alphanumeric(namePhoto1);
+//        String descripcion = "descripcion";
+//
+//        out.println(namePhoto2);
+//        out.println(descripcion);
+//
+//        String url = request.getParameter("url");
+//        String description = request.getParameter("description");
+//
+//
+//
+//
+//    }
 
     public void destroy() {
     }

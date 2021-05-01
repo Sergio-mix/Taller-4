@@ -5,17 +5,18 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
+
 @WebServlet(name = "loginWithCookies", value = "/login-with-cookies")
 public class Cookies extends HttpServlet {
 
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        String names=null;
         response.setContentType("text/html");
-
         String name = request.getParameter("username");
-
+        PrintWriter out = response.getWriter();
         try {
-            PrintWriter out = response.getWriter();
+
             //Creating cookies
             Cookie cUsername = new Cookie("username", name);
 
@@ -26,7 +27,20 @@ public class Cookies extends HttpServlet {
         } catch (Exception e) {
             System.out.println(e);
         }
+
+        Cookie[] theCookies =request.getCookies();
+        if(theCookies!=null){
+            for(Cookie cookie_temporal:theCookies){
+                if("username".equals(cookie_temporal.getName())){
+                        names = cookie_temporal.getValue();
+                        break;
+                }
+            }
+
+        }
+        out.println(names);
     }
+
 
     public void destroy() {
     }
