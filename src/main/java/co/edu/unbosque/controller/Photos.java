@@ -20,19 +20,32 @@ public class Photos extends HttpServlet {
 
     private SessionBeanLocal sessionBean;
 
+
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
         response.setContentType("text/html");
-
-
         PrintWriter out = response.getWriter();
-
+        Cookie[] cookies = request.getCookies();
         String boton = request.getParameter("btnEnviar");
+        String junto ="";
+        String cookiedatos = null;
 
         if (boton.equalsIgnoreCase("Guardar")) {
             String descripcion = request.getParameter("txtNombre");
             String nombreFoto = request.getParameter("fileImagen");
             String nombreFotoDef = alphanumeric(nombreFoto);
-            String junto = nombreFotoDef + " " + descripcion;
+
+            Cookie[] theCookies =request.getCookies();
+            if(theCookies!=null){
+                for(Cookie cookie_temporal:theCookies){
+                    if("username".equals(cookie_temporal.getName())){
+                        cookiedatos = cookie_temporal.getValue();
+                        break;
+                    }
+                }
+            }
+
+             junto ="Nombre de la fotografia: "+ nombreFotoDef + "---" +"Descripcion: "+ descripcion+"---"+"Username: "+cookiedatos;
             sessionBean.agregar(junto);
             out.println("<h4> Nombre de foto agregado correctamente</h4>");
             out.println("<a href = 'photographs.jsp'>Volver</a>");
@@ -42,6 +55,8 @@ public class Photos extends HttpServlet {
             }
             out.println("<a href = 'photographs.jsp'>Volver</a>");
         }
+
+
 
     }
 
@@ -81,7 +96,9 @@ public class Photos extends HttpServlet {
 
     public void destroy() {
     }
+
     int cont = 0;
+
     public String alphanumeric(String name_photo) {
 
 

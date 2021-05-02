@@ -1,12 +1,15 @@
 package co.edu.unbosque.controller;
 
 
+import co.edu.unbosque.ejb_singleton.SessionBeanLocal;
+
 import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 
 @WebServlet(name = "loginWithCookies", value = "/login-with-cookies")
+
 public class Cookies extends HttpServlet {
 
 
@@ -15,6 +18,9 @@ public class Cookies extends HttpServlet {
         response.setContentType("text/html");
         String name = request.getParameter("username");
         PrintWriter out = response.getWriter();
+
+
+
         try {
 
             //Creating cookies
