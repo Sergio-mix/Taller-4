@@ -11,8 +11,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Implementacion EJB tipo Singleton y se modifico el punto 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Cookies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taller-4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Taller-4.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/photographs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/photographs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,19 +84,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.57">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="table.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller_4_war_exploded/table.jsp">
       <method v="2" />
     </configuration>
@@ -176,7 +166,7 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/Taller_4_war_exploded/" />
+      <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <deployment>
         <artifact name="Taller-4:war exploded">
           <settings>
@@ -274,6 +264,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.table.jsp" />
+      <item itemvalue="Tomcat Server.Tomcat 8.5.57" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JavaScript Debug.table.jsp" />
@@ -311,6 +305,8 @@
       <workItem from="1619892264308" duration="40000" />
       <workItem from="1619892353833" duration="5912000" />
       <workItem from="1619915570860" duration="10031000" />
+      <workItem from="1619928428948" duration="156000" />
+      <workItem from="1619928606208" duration="932000" />
     </task>
     <task id="LOCAL-00001" summary="Tuesday change">
       <created>1619529786498</created>
@@ -348,17 +344,6 @@
     <MESSAGE value="Tuesday change" />
     <MESSAGE value="Implementacion EJB tipo Singleton y se modifico el punto 2" />
     <option name="LAST_COMMIT_MESSAGE" value="Implementacion EJB tipo Singleton y se modifico el punto 2" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Taller_4$TomEE_8_5_57.ic" NAME="TomEE 8.5.57 Coverage Results" MODIFIED="1619880907848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

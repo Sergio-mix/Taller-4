@@ -12,7 +12,7 @@
 <form action="login-with-cookies">
     <div id="conteiner">
         <h2 id="title">Username</h2>
-        <p><input type="text" name="username" placeholder="Username" id="txtName"></p>
+        <p><input type="text" name="username" required placeholder="Username" id="txtName"></p>
         <input type="submit" value="Login" id="button">
         <script src="js/index.js" defer></script>
     </div>
