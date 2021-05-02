@@ -16,11 +16,11 @@
         <div class="card-body">
             <div class="form-group">
                 <label>Description </label>
-                <input type="text" name="txtNombre" class="form-control">
+                <input type="text" name="txtNombre"required class="form-control">
             </div>
             <div class="form-group">
                 <label>Imagen</label>
-                <input type="file" name="fileImagen">
+                <input type="file" name="fileImagen"required>
             </div>
         </div>
         <div class="card-footer">
