@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-<form action="Controlador?accion=Guardar" class="col-md-6" method="POST" enctype="multipart/form-data">
+<form action="accion" class="col-md-6" method="get" enctype="multipart/form-data">
     <div class="card">
         <div class="card-header">
             <h3>Agregar Imagenes</h3>
@@ -24,8 +24,11 @@
             </div>
         </div>
         <div class="card-footer">
-            <button class="btn btn-outline-primary" name="accion" value="Guardar">Guardar Imagen</button>
+            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Guardar">Guardar Imagen </input> <br>
+            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Mostrar">Mostrar registros </input>
         </div>
+
+
     </div>
 </form>
 </body>

@@ -1,5 +1,8 @@
 package co.edu.unbosque.controller;
 
+import co.edu.unbosque.ejb_singleton.SessionBeanLocal;
+
+import javax.ejb.EJB;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
@@ -10,8 +13,38 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
-@WebServlet(name = "Guardar", value = "/photo_saved")
+@WebServlet(name = "Guardar", value = "/accion")
 public class Photos extends HttpServlet {
+
+    @EJB
+
+    private SessionBeanLocal sessionBean;
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+        response.setContentType("text/html");
+
+
+        PrintWriter out = response.getWriter();
+
+        String boton = request.getParameter("btnEnviar");
+
+        if (boton.equalsIgnoreCase("Guardar")) {
+            String descripcion = request.getParameter("txtNombre");
+            String nombreFoto = request.getParameter("fileImagen");
+            String nombreFotoDef = alphanumeric(nombreFoto);
+            String junto = nombreFotoDef + " " + descripcion;
+            sessionBean.agregar(junto);
+            out.println("<h4> Nombre de foto agregado correctamente</h4>");
+            out.println("<a href = 'photographs.jsp'>Volver</a>");
+        } else {
+            if (boton.equalsIgnoreCase("Mostrar")) {
+                out.println("<h4>" + sessionBean.mostrar() + "</h4>");
+            }
+            out.println("<a href = 'photographs.jsp'>Volver</a>");
+        }
+
+    }
+
 
 //    public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 //        response.setContentType("text/html");
@@ -48,19 +81,20 @@ public class Photos extends HttpServlet {
 
     public void destroy() {
     }
-
+    int cont = 0;
     public String alphanumeric(String name_photo) {
-        int cont = 0;
+
 
         String result = null;
         if (cont >= 0) {
-            cont ++;
+
             if (isNumeric(name_photo) == true) {
 
                 result = name_photo + "" + cont;
             } else {
                 result = name_photo + "Photo" + cont;
             }
+            cont++;
         }
         return result;
     }

@@ -3,6 +3,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <title>JSP Page</title>
 </head>
@@ -24,8 +25,7 @@
                     <td>${p.nombre}</td>
                     <td><img src="${p.ruta}" height="100" width="100"></td>
                     <td>
-                        <a href="#" class="btn btn-warning">Editar</a>
-                        <a href="#" class="btn btn-danger">Delete</a>
+                        <a href="#" class="btn btn-danger">Descargar</a>
                     </td>
                 </tr>
             </c:forEach>
