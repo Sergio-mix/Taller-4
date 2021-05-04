@@ -7,12 +7,12 @@ import java.io.*;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class save {
+public class Save {
 
 
-    public void writeJson(){
-        String json="";
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("datos_persona.json"))) {
+    public void writeJson(String json){
+
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("datos.json"))) {
             bw.write(json);
             System.out.println("Fichero creado");
         } catch (IOException ex) {

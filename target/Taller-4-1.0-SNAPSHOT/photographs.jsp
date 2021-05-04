@@ -16,18 +16,16 @@
         <div class="card-body">
             <div class="form-group">
                 <label>Description </label>
-                <input type="text" name="txtNombre"required class="form-control">
+                <input type="text" name="txtNombre" required class="form-control">
             </div>
             <div class="form-group">
                 <label>Imagen</label>
-                <input type="file" name="fileImagen"required>
+                <input type="file" name="fileImagen" required>
             </div>
         </div>
         <div class="card-footer">
-            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value=""></input>
+            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Guardar">
         </div>
-
-
     </div>
 </form>
 </body>

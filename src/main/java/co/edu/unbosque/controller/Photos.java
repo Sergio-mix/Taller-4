@@ -2,6 +2,7 @@ package co.edu.unbosque.controller;
 
 import co.edu.unbosque.ejb_singleton.SessionBeanLocal;
 import co.edu.unbosque.model.Dao.UserDao;
+import com.google.gson.Gson;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import javax.ejb.EJB;
@@ -11,7 +12,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.swing.*;
-import java.io.File;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.text.DateFormat;
@@ -26,6 +26,7 @@ public class Photos extends HttpServlet {
     private SessionBeanLocal sessionBean;
 
     private UserDao userDao;
+    private Save save;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
@@ -52,6 +53,13 @@ public class Photos extends HttpServlet {
 
             userDao = new UserDao();
             userDao.add(cookiedatos, date(), descripcion, nombreFoto);
+            Gson g = new Gson();
+            for(int i=0; i<userDao.getListUser().size();i++){
+                System.out.println(g.toJson(userDao.getListUser().get(i)));
+                save.writeJson(g.toJson(userDao.getListUser().get(i)));
+
+            }
+//            save.writeJson(g.toJson());
             response.sendRedirect("table.jsp");
         }
     }
