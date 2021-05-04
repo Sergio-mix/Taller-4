@@ -10,10 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Implementacion EJB tipo Singleton y se modifico el punto 2">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Java_EE_6_Java_EE_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Taller_4_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Taller_4_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/photographs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/photographs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taller-4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Taller-4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Cookies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/Dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/photographs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/photographs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,6 +324,10 @@
       <workItem from="1619928428948" duration="156000" />
       <workItem from="1619928606208" duration="1404000" />
       <workItem from="1619988078240" duration="4046000" />
+      <workItem from="1619994168226" duration="687000" />
+      <workItem from="1620046887570" duration="328000" />
+      <workItem from="1620064989778" duration="49000" />
+      <workItem from="1620095331010" duration="4698000" />
     </task>
     <task id="LOCAL-00001" summary="Tuesday change">
       <created>1619529786498</created>

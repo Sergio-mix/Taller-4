@@ -24,8 +24,7 @@
             </div>
         </div>
         <div class="card-footer">
-            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Guardar">Guardar Imagen </input> <br>
-            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Mostrar">Mostrar registros </input>
+            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value=""></input>
         </div>
 
 

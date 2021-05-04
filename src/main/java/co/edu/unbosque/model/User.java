@@ -1,5 +1,8 @@
 package co.edu.unbosque.model;
 
+import javax.swing.*;
+import java.io.File;
+
 /**
  * Class User
  */
@@ -7,20 +10,20 @@ public class User {
     private String usuario;
     private String fecha;
     private String descripcion;
-    private String ruta;
+    private ImageIcon imagen;
 
     /**
      * Constructor
      * @param usuario
      * @param fecha
      * @param descripcion
-     * @param ruta
+     * @param imagen
      */
-    public User(String usuario, String fecha, String descripcion, String ruta) {
+    public User(String usuario, String fecha, String descripcion, ImageIcon imagen) {
         this.usuario = usuario;
         this.fecha = fecha;
         this.descripcion = descripcion;
-        this.ruta = ruta;
+        this.imagen = imagen;
     }
 
     public String getUsuario() {
@@ -39,19 +42,19 @@ public class User {
         this.fecha = fecha;
     }
 
-    public String getDescripción() {
+    public String getDescripcion() {
         return descripcion;
     }
 
-    public void setDescripción(String descripcion) {
+    public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
 
-    public String getRuta() {
-        return ruta;
+    public ImageIcon getImagen() {
+        return imagen;
     }
 
-    public void setRuta(String ruta) {
-        this.ruta = ruta;
+    public void setImagen(ImageIcon imagen) {
+        this.imagen = imagen;
     }
 }
