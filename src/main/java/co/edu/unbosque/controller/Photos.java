@@ -1,11 +1,19 @@
 package co.edu.unbosque.controller;
 
+import co.edu.unbosque.ejb_singleton.SessionBeanLocal;
 import co.edu.unbosque.model.Dao.UserDao;
 import com.google.gson.Gson;
 import org.apache.commons.lang3.RandomStringUtils;
+
+import javax.ejb.EJB;
 import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.*;
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.swing.*;
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -14,17 +22,24 @@ import java.util.UUID;
 @WebServlet(name = "Guardar", value = "/accion")
 public class Photos extends HttpServlet {
 
+    @EJB
+    private SessionBeanLocal sessionBean;
+
     private UserDao userDao;
     private Save save;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
         response.setContentType("text/html");
+        PrintWriter out = response.getWriter();
         String boton = request.getParameter("btnEnviar");
-
+        String cookiedatos = null;
 
         if (boton.equalsIgnoreCase("Guardar")) {
-            String cookiedatos = null;
+            String descripcion = request.getParameter("txtNombre");
+            ImageIcon nombreFoto = new ImageIcon(request.getParameter("fileImagen"));
+            nombreFoto.setDescription(SecuenciaALFA() + ".jpg");
+
 
             Cookie[] theCookies = request.getCookies();
             if (theCookies != null) {
@@ -35,28 +50,20 @@ public class Photos extends HttpServlet {
                     }
                 }
             }
-            String descripcion = request.getParameter("txtNombre");
-            String photo = request.getParameter("fileImagen");
 
             userDao = new UserDao();
-            userDao.add(cookiedatos, date(), descripcion, photo);
-
-
+            userDao.add(cookiedatos, date(), descripcion, nombreFoto);
             Gson g = new Gson();
-            for (int i = 0; i < userDao.getListUser().size(); i++) {
+            for(int i=0; i<userDao.getListUser().size();i++){
                 System.out.println(g.toJson(userDao.getListUser().get(i)));
                 save.writeJson(g.toJson(userDao.getListUser().get(i)));
+
             }
 //            save.writeJson(g.toJson());
             response.sendRedirect("table.jsp");
         }
     }
 
-    /**
-     * Method to get the current date
-     *
-     * @return date
-     */
     public String date() {
         String fecha;
         Date date = new Date();
@@ -65,12 +72,7 @@ public class Photos extends HttpServlet {
         return fecha;
     }
 
-    /**
-     * Method of Generating a Random Alpha Numeric Sequence
-     *
-     * @return 12 character sequence
-     */
-    public String secuenciaALFA() {
+    public String SecuenciaALFA() {
         Long.toHexString(Double.doubleToLongBits(Math.random()));
         UUID.randomUUID().toString();
         return RandomStringUtils.randomAlphanumeric(12);

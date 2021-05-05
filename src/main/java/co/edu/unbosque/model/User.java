@@ -7,54 +7,54 @@ import java.io.File;
  * Class User
  */
 public class User {
-    private String user;
-    private String date;
-    private String description;
-    private String route;
+    private String usuario;
+    private String fecha;
+    private String descripcion;
+    private ImageIcon imagen;
 
     /**
-     * constructor
-     * @param user
-     * @param date
-     * @param description
-     * @param route
+     * Constructor
+     * @param usuario
+     * @param fecha
+     * @param descripcion
+     * @param imagen
      */
-    public User(String user, String date, String description, String route) {
-        this.user = user;
-        this.date = date;
-        this.description = description;
-        this.route = route;
+    public User(String usuario, String fecha, String descripcion, ImageIcon imagen) {
+        this.usuario = usuario;
+        this.fecha = fecha;
+        this.descripcion = descripcion;
+        this.imagen = imagen;
     }
 
-    public String getUser() {
-        return user;
+    public String getUsuario() {
+        return usuario;
     }
 
-    public void setUser(String user) {
-        this.user = user;
+    public void setUsuario(String usuario) {
+        this.usuario = usuario;
     }
 
-    public String getDate() {
-        return date;
+    public String getFecha() {
+        return fecha;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
     }
 
-    public String getDescription() {
-        return description;
+    public String getDescripcion() {
+        return descripcion;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
     }
 
-    public String getRoute() {
-        return route;
+    public ImageIcon getImagen() {
+        return imagen;
     }
 
-    public void setRoute(String route) {
-        this.route = route;
+    public void setImagen(ImageIcon imagen) {
+        this.imagen = imagen;
     }
 }
