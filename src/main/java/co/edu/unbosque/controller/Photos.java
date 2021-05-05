@@ -64,8 +64,10 @@ public class Photos extends HttpServlet {
 //                save.writeJson(json);
             }
 
-            try (BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\SergioHZ\\IdeaProjects\\Taller-4\\src\\main\\webapp\\json\\data.json"))) {
-                bw.write(json);
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\Pc\\IdeaProjects\\Taller-4\\src\\main\\webapp\\json\\data.json"))) {
+                bw.write("{\n" +
+                        "    \"data\": ["+json+"]\n" +
+                        "  }");
                 System.out.println("Fichero creado");
             } catch (IOException ex) {
 
