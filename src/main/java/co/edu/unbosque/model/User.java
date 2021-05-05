@@ -7,54 +7,54 @@ import java.io.File;
  * Class User
  */
 public class User {
-    private String usuario;
-    private String fecha;
-    private String descripcion;
-    private ImageIcon imagen;
+    private String user;
+    private String date;
+    private String description;
+    private String image;
 
     /**
-     * Constructor
-     * @param usuario
-     * @param fecha
-     * @param descripcion
-     * @param imagen
+     * builder
+     * @param user
+     * @param date
+     * @param description
+     * @param image
      */
-    public User(String usuario, String fecha, String descripcion, ImageIcon imagen) {
-        this.usuario = usuario;
-        this.fecha = fecha;
-        this.descripcion = descripcion;
-        this.imagen = imagen;
+    public User(String user, String date, String description, String image) {
+        this.user = user;
+        this.date = date;
+        this.description = description;
+        this.image = image;
     }
 
-    public String getUsuario() {
-        return usuario;
+    public String getUser() {
+        return user;
     }
 
-    public void setUsuario(String usuario) {
-        this.usuario = usuario;
+    public void setUser(String user) {
+        this.user = user;
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getDate() {
+        return date;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setDate(String date) {
+        this.date = date;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public ImageIcon getImagen() {
-        return imagen;
+    public String getImage() {
+        return image;
     }
 
-    public void setImagen(ImageIcon imagen) {
-        this.imagen = imagen;
+    public void setImage(String image) {
+        this.image = image;
     }
 }

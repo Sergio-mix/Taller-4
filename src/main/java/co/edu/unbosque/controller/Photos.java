@@ -1,7 +1,6 @@
 package co.edu.unbosque.controller;
 
-import co.edu.unbosque.ejb_singleton.SessionBeanLocal;
-import co.edu.unbosque.model.Dao.UserDao;
+import co.edu.unbosque.model.singleton.SessionBeanLocal;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -12,22 +11,18 @@ import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.swing.*;
 import java.io.*;
+import java.net.URL;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
-import java.util.logging.Level;
-import java.util.logging.Logger;
 
 @WebServlet(name = "Guardar", value = "/accion")
 public class Photos extends HttpServlet {
 
     @EJB
     private SessionBeanLocal sessionBean;
-
-    private UserDao userDao;
     private Save save;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -39,9 +34,7 @@ public class Photos extends HttpServlet {
 
         if (boton.equalsIgnoreCase("Guardar")) {
             String descripcion = request.getParameter("txtNombre");
-            ImageIcon nombreFoto = new ImageIcon(request.getParameter("fileImagen"));
-            nombreFoto.setDescription(SecuenciaALFA() + ".jpg");
-
+            String nombreFoto = request.getParameter("fileImagen");
 
             Cookie[] theCookies = request.getCookies();
             if (theCookies != null) {
@@ -53,18 +46,18 @@ public class Photos extends HttpServlet {
                 }
             }
 
-            userDao = new UserDao();
-            save =  new Save();
-            userDao.add(cookiedatos, date(), descripcion, nombreFoto);
+            save = new Save();
+            sessionBean.agregar(cookiedatos, date(), descripcion, nombreFoto);
+
             Gson g = new GsonBuilder().setPrettyPrinting().create();
-            for(int i=0; i<userDao.getListUser().size();i++){
-                json = g.toJson(userDao.getListUser().get(i));
+            for (int i = 0; i < sessionBean.mostrar().size(); i++) {
+                json = g.toJson(sessionBean.mostrar().get(i));
                 System.out.println(json);
-               break;
+                break;
 //                save.writeJson(json);
             }
-            String opcion = String.valueOf(getClass().getResourceAsStream("/json/data.json"));
-            try (BufferedWriter bw = new BufferedWriter(new FileWriter(opcion))) {
+
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\SergioHZ\\IdeaProjects\\Taller-4\\src\\main\\webapp\\json\\data.json"))) {
                 bw.write(json);
                 System.out.println("Fichero creado");
             } catch (IOException ex) {
@@ -79,6 +72,11 @@ public class Photos extends HttpServlet {
         }
     }
 
+    /**
+     * Method to get the current date
+     *
+     * @return date
+     */
     public String date() {
         String fecha;
         Date date = new Date();
@@ -87,7 +85,12 @@ public class Photos extends HttpServlet {
         return fecha;
     }
 
-    public String SecuenciaALFA() {
+    /**
+     * Method to generate an alphanumeric sequence
+     *
+     * @return Random alphanumeric sequence
+     */
+    public String ALFA() {
         Long.toHexString(Double.doubleToLongBits(Math.random()));
         UUID.randomUUID().toString();
         return RandomStringUtils.randomAlphanumeric(12);

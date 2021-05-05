@@ -10,11 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Implementacion EJB tipo Singleton y se modifico el punto 2">
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBeanLocal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Login.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Save.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Save.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/datos.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/json/datos.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ejb_singleton/SessionBean.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ejb_singleton/SessionBeanLocal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/Dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,15 +92,13 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.57">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -329,6 +332,7 @@
       <workItem from="1620064989778" duration="49000" />
       <workItem from="1620095331010" duration="4698000" />
       <workItem from="1620100361190" duration="1813000" />
+      <workItem from="1620189652512" duration="2019000" />
     </task>
     <task id="LOCAL-00001" summary="Tuesday change">
       <created>1619529786498</created>
