@@ -18,21 +18,27 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
+/**
+ * Class Photos
+ */
+
 @WebServlet(name = "Guardar", value = "/accion")
 public class Photos extends HttpServlet {
-
+  // Instancias de clases
     @EJB
     private SessionBeanLocal sessionBean;
     private Save save;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
         String json = null;
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         String boton = request.getParameter("btnEnviar");
         String cookiedatos = null;
-
+          // validaciones para los botones
         if (boton.equalsIgnoreCase("Guardar")) {
+            // se almacenan los datos recibidos para ser asociados a la cookie
             String descripcion = request.getParameter("txtNombre");
             String nombreFoto = request.getParameter("fileImagen");
 
@@ -47,6 +53,7 @@ public class Photos extends HttpServlet {
             }
 
             save = new Save();
+            // se agregan los datos a el metodo de agregar del singleton
             sessionBean.agregar(cookiedatos, date(), descripcion, nombreFoto);
 
             Gson g = new GsonBuilder().setPrettyPrinting().create();

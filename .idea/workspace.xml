@@ -10,15 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Implementacion EJB tipo Singleton y se modifico el punto 2">
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBeanLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Taller_4_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Taller_4_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Taller-4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Taller-4.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Cookies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ejb_singleton/SessionBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/ejb_singleton/SessionBeanLocal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/Dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/Dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBeanLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBeanLocal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +80,7 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -92,17 +92,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.57">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="table.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller_4_war_exploded/table.jsp">
       <method v="2" />
     </configuration>
@@ -185,7 +174,6 @@
       </method>
     </configuration>
     <configuration name="Tomcat 8.5.57" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.57" ALTERNATIVE_JRE_ENABLED="false" nameIsGenerated="true">
-      <option name="BROWSER_ID" value="b2a9dca7-9d0b-4e1e-98a8-afb19c1328d2" />
       <deployment>
         <artifact name="Taller-4:war exploded">
           <settings>
@@ -333,6 +321,13 @@
       <workItem from="1620095331010" duration="4698000" />
       <workItem from="1620100361190" duration="1813000" />
       <workItem from="1620189652512" duration="2019000" />
+      <workItem from="1620223719205" duration="45000" />
+      <workItem from="1620223771630" duration="1674000" />
+      <workItem from="1620226155704" duration="58000" />
+      <workItem from="1620226298117" duration="797000" />
+      <workItem from="1620231060112" duration="114000" />
+      <workItem from="1620232168896" duration="2488000" />
+      <workItem from="1620254370039" duration="1013000" />
     </task>
     <task id="LOCAL-00001" summary="Tuesday change">
       <created>1619529786498</created>

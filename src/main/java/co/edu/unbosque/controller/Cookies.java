@@ -4,7 +4,10 @@ import java.io.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
-
+/**
+ * Class Cokies
+ */
+//
 @WebServlet(name = "loginWithCookies", value = "/login-with-cookies")
 public class Cookies extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
@@ -21,6 +24,7 @@ public class Cookies extends HttpServlet {
         } catch (Exception e) {
             System.out.println(e);
         }
+        // redirect to the photographs.jsp
         response.sendRedirect("photographs.jsp");
     }
 }
