@@ -11,11 +11,24 @@ public class Save {
 
 
     public void writeJson(String json){
-
-        try (BufferedWriter bw = new BufferedWriter(new FileWriter("datos.json"))) {
+//        try {
+//            System.out.println("entre1");
+//            FileWriter file = new FileWriter("\\Taller-4\\src\\main\\webapp\\json\\datos.json");
+//            file.write(json);
+//            System.out.println("entre2");
+//            file.close();
+//
+//        } catch (IOException e) {
+//            //manejar error
+//            System.out.println("entre3");
+//        }
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter("\\Taller-4\\src\\main\\webapp\\json\\datos.json"))) {
+            System.out.println("entre1");
             bw.write(json);
+            System.out.println("entre2");
             System.out.println("Fichero creado");
         } catch (IOException ex) {
+            System.out.println("entre3");
 //            Logger.getLogger(LeerJsonEj3.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

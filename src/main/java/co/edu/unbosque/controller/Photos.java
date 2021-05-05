@@ -3,6 +3,7 @@ package co.edu.unbosque.controller;
 import co.edu.unbosque.ejb_singleton.SessionBeanLocal;
 import co.edu.unbosque.model.Dao.UserDao;
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import javax.ejb.EJB;
@@ -12,12 +13,13 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.swing.*;
-import java.io.IOException;
-import java.io.PrintWriter;
+import java.io.*;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 @WebServlet(name = "Guardar", value = "/accion")
 public class Photos extends HttpServlet {
@@ -29,7 +31,7 @@ public class Photos extends HttpServlet {
     private Save save;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
+        String json = null;
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         String boton = request.getParameter("btnEnviar");
@@ -52,14 +54,27 @@ public class Photos extends HttpServlet {
             }
 
             userDao = new UserDao();
+            save =  new Save();
             userDao.add(cookiedatos, date(), descripcion, nombreFoto);
-            Gson g = new Gson();
+            Gson g = new GsonBuilder().setPrettyPrinting().create();
             for(int i=0; i<userDao.getListUser().size();i++){
-                System.out.println(g.toJson(userDao.getListUser().get(i)));
-                save.writeJson(g.toJson(userDao.getListUser().get(i)));
+                json = g.toJson(userDao.getListUser().get(i));
+                System.out.println(json);
+               break;
+//                save.writeJson(json);
+            }
+            String opcion = String.valueOf(getClass().getResourceAsStream("/json/data.json"));
+            try (BufferedWriter bw = new BufferedWriter(new FileWriter(opcion))) {
+                bw.write(json);
+                System.out.println("Fichero creado");
+            } catch (IOException ex) {
 
             }
-//            save.writeJson(g.toJson());
+
+//            Writer writer = new FileWriter("data.json");
+//            writer.write(json);
+//            writer.close();
+//
             response.sendRedirect("table.jsp");
         }
     }
