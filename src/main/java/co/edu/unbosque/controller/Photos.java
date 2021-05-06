@@ -27,7 +27,6 @@ public class Photos extends HttpServlet {
   // Instancias de clases
     @EJB
     private SessionBeanLocal sessionBean;
-    private Save save;
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
 
@@ -52,7 +51,7 @@ public class Photos extends HttpServlet {
                 }
             }
 
-            save = new Save();
+
             // se agregan los datos a el metodo de agregar del singleton
             sessionBean.agregar(cookiedatos, date(), descripcion, nombreFoto);
 
@@ -66,7 +65,7 @@ public class Photos extends HttpServlet {
 
             try (BufferedWriter bw = new BufferedWriter(new FileWriter("C:\\Users\\Pc\\IdeaProjects\\Taller-4\\src\\main\\webapp\\json\\data.json"))) {
                 bw.write("{\n" +
-                        "    \"data\": ["+json+"]\n" +
+                        "    \"data\": [\n"+json+"\n]\n" +
                         "  }");
                 System.out.println("Fichero creado");
             } catch (IOException ex) {
@@ -77,7 +76,7 @@ public class Photos extends HttpServlet {
 //            writer.write(json);
 //            writer.close();
 //
-            response.sendRedirect("table.jsp");
+            response.sendRedirect("table.html");
         }
     }
 
