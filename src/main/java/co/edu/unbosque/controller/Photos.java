@@ -4,6 +4,7 @@ import co.edu.unbosque.model.singleton.SessionBeanLocal;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import org.apache.commons.lang3.RandomStringUtils;
+
 import javax.ejb.EJB;
 import javax.servlet.annotation.MultipartConfig;
 import javax.servlet.annotation.WebServlet;
@@ -27,7 +28,7 @@ public class Photos extends HttpServlet {
     // Instancias de clases
     @EJB
     private SessionBeanLocal sessionBean;
-    private String pathFiles = "C:\\Users\\SergioHZ\\IdeaProjects\\Taller-4\\src\\main\\resources\\images\\";
+    private String pathFiles = "C:\\Users\\Usuario\\IdeaProjects\\Taller-4\\src\\main\\resources\\Images\\";
     private File uploads = new File(pathFiles);
     private String[] extens = {".png", ".jpg", ".PNG"};
 
@@ -84,10 +85,18 @@ public class Photos extends HttpServlet {
             } catch (IOException ex) {
 
             }
-
-            out.println("<h4>" + sessionBean.mostrar() + "</h4>");
-            out.println("<a href = 'index.jsp'>Volver</a>");
+            response.sendRedirect("table.jsp");
+            out.println("<a href = 'photographs.jsp'>Volver</a>");
+        } else {
+            if (boton.equalsIgnoreCase("Mostrar")) {
+                for (int i = 0; i < sessionBean.mostrar().size(); i++) {
+                    out.println("<h4>" +"Fecha: " +sessionBean.mostrar().get(i).getDate() + "---"+"Descripcion: "+sessionBean.mostrar().get(i).getDescription() + "---"+"Imagen: "+sessionBean.mostrar().get(i).getImage() +"---"+"Username: " +sessionBean.mostrar().get(i).getUser() + "</h4>");
+                }
+            }
+            out.println("<a href = 'photographs.jsp'>Volver</a>");
         }
+
+
     }
 
     /**
