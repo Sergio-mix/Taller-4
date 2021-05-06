@@ -9,15 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Imagenes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/json/data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/json/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/json/data.json" afterDir="false" />
-    </list>
+    <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Finalizado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -89,17 +81,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.57">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="table.jsp" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:8080/Taller_4_war_exploded/table.jsp">
       <method v="2" />
     </configuration>
@@ -337,7 +318,7 @@
       <workItem from="1620231060112" duration="114000" />
       <workItem from="1620232168896" duration="2488000" />
       <workItem from="1620254370039" duration="1013000" />
-      <workItem from="1620277710997" duration="3256000" />
+      <workItem from="1620277710997" duration="3390000" />
     </task>
     <task id="LOCAL-00001" summary="Tuesday change">
       <created>1619529786498</created>
@@ -367,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620182346538</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Finalizado">
+      <created>1620281084222</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1620281084222</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -391,7 +379,8 @@
     <MESSAGE value="Fixes in validations and fixes in code" />
     <MESSAGE value="project rollback" />
     <MESSAGE value="Imagenes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Imagenes" />
+    <MESSAGE value="Finalizado" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finalizado" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Taller_4$TomEE_8_5_57.ic" NAME="TomEE 8.5.57 Coverage Results" MODIFIED="1619880907848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

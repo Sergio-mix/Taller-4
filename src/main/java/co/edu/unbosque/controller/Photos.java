@@ -31,10 +31,7 @@ public class Photos extends HttpServlet {
     private String pathFiles = "C:\\Users\\Usuario\\IdeaProjects\\Taller-4\\src\\main\\resources\\Images\\";
     private File uploads = new File(pathFiles);
     private String[] extens = {".png", ".jpg", ".PNG"};
-
-
     public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException {
-
         String json = null;
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
@@ -95,8 +92,6 @@ public class Photos extends HttpServlet {
             }
             out.println("<a href = 'photographs.jsp'>Volver</a>");
         }
-
-
     }
 
     /**

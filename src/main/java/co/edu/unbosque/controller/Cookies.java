@@ -15,7 +15,6 @@ public class Cookies extends HttpServlet {
         response.setContentType("text/html");
         String name = request.getParameter("username");
         PrintWriter out = response.getWriter();
-
         try {
             //Creating cookies
             Cookie cUsername = new Cookie("username", name);
