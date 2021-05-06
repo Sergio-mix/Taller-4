@@ -9,17 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Implementacion EJB tipo Singleton y se modifico el punto 2">
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Taller_4_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Taller_4_war_exploded.xml" afterDir="false" />
+    <list default="true" id="3a2a3ab9-80fb-4d66-ad4f-46f8b5e4fa0c" name="Default Changelist" comment="Imagenes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Taller-4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Taller-4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Cookies.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Cookies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/controller/Photos.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBeanLocal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/co/edu/unbosque/model/singleton/SessionBeanLocal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/json/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/json/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/photographs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/photographs.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/table.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/table.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/js/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/js/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/json/data.json" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/json/data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/photographs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/Taller-4-1.0-SNAPSHOT/photographs.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -380,7 +381,8 @@
     <MESSAGE value="Implementacion EJB tipo Singleton y se modifico el punto 2" />
     <MESSAGE value="Fixes in validations and fixes in code" />
     <MESSAGE value="project rollback" />
-    <option name="LAST_COMMIT_MESSAGE" value="project rollback" />
+    <MESSAGE value="Imagenes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Imagenes" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Taller_4$TomEE_8_5_57.ic" NAME="TomEE 8.5.57 Coverage Results" MODIFIED="1619880907848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

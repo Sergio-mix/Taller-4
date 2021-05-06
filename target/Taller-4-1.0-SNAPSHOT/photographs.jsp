@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
-<form action="accion" class="col-md-6" method="get" enctype="multipart/form-data">
+<form action="accion" class="col-md-6" method="post" enctype="multipart/form-data">
     <div class="card">
         <div class="card-header">
             <h3>Agregar Imagenes</h3>
@@ -25,6 +25,7 @@
         </div>
         <div class="card-footer">
             <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Guardar">
+            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Mostrar">
         </div>
     </div>
 </form>

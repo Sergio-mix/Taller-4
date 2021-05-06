@@ -24,7 +24,8 @@
             </div>
         </div>
         <div class="card-footer">
-            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Guardar" >
+            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Guardar">
+            <input type="submit" class="btn btn-outline-primary" name="btnEnviar" value="Mostrar">
         </div>
     </div>
 </form>

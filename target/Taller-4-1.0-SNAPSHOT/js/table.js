@@ -3,7 +3,6 @@
 //funcion para leer y cargar los datos del json a la tabla agregando las columnas con su correspondiente registro
 $(document).ready(function () {
     $('#data-table').DataTable({
-
         "ajax": "/json/data.json",
         "columns": [
             { "data": "date" },
@@ -12,6 +11,4 @@ $(document).ready(function () {
             { "defaultContent": "user" }
         ]
     });
-
-
 });
